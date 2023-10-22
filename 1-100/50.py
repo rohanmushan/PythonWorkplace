@@ -1,10 +1,5 @@
-# Find the intersection of two lists
-# Sample lists
-list1 = [1, 2, 3, 4, 5]
-list2 = [3, 4, 5, 6, 7]
-
-# Find the intersection of the two lists
-intersection = list(set(list1) & set(list2))
-
-# Print the intersection
-print("Intersection of the two lists:", intersection)
+#Find the intersection of two sets
+a = {1, 2, 3, 4, 5, 6, 7} 
+b = {5, 6, 7, 8, 9, 10}
+z = a.intersection(b)
+print(z) 
