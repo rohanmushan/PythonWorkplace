@@ -1,17 +1,16 @@
-# Merge two sorted lists into one sorted list
-# Function to merge two sorted lists into one sorted list
+
 def merge_sorted_lists(list1, list2):
-    merged_list = []
-    i = j = 0
+    merged_list=[]
+    i=j=0
 
     # Iterate through both lists, comparing elements
-    while i < len(list1) and j < len(list2):
-        if list1[i] < list2[j]:
+    while i<len(list1)andj<len(list2):
+        if list1[i]<list2[j]:
             merged_list.append(list1[i])
-            i += 1
+            i+=1
         else:
             merged_list.append(list2[j])
-            j += 1
+            j+=1
 
     # Append remaining elements from both lists
     merged_list.extend(list1[i:])
@@ -20,8 +19,8 @@ def merge_sorted_lists(list1, list2):
     return merged_list
 
 # Sample sorted lists
-list1 = [1, 3, 5, 7]
-list2 = [2, 4, 6, 8]
+list1=[1, 3, 5, 7]
+list2=[2, 4, 6, 8]
 
 # Merge the two sorted lists
 result = merge_sorted_lists(list1, list2)
