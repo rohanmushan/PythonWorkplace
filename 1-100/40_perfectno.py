@@ -1,5 +1,5 @@
 #Check if a number is a perfect number
-num=int(input("Enter any number: "))
+num=int(input("Enter number: "))
 sum1=0
 for i in range(1, n):
     if(num%i==0):
